@@ -1,0 +1,118 @@
+body{background-color: lightskyblue;}
+.square {
+  border: 1px solid grey;
+  float: left;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 80px;
+}
+.square:focus {
+  outline: none;
+}
+.square:hover {
+  background-color: lightgrey;
+}
+.black {
+  background-color: grey;
+}
+.white {
+  background-color: blanchedalmond;
+}
+/* Board */
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.board {
+  min-width: 650px;
+}
+/* Game */
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  min-width: 1200px;
+
+}
+/* Game Info */
+ul {
+  padding-left: 30px;
+}
+.game-info {
+  margin-left: 20px;
+}
+.status {
+  margin-bottom: 10px;
+}
+/*Pieces*/
+.piece {
+  width: 80px;
+  height: 80px;
+}
+.red {
+  background-color: green;
+}
+.grey {
+  background-color: lightgreen;
+}
+
+#highlight {
+  outline-style: solid;
+  outline-color: red;
+  backdrop-filter: opacity(25%);
+}
+
+.MovesList {
+  height: 650px;
+  overflow-y: auto;
+  min-width: 150px;
+}
+
+.takenPiece {
+  float: left;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+
+/* .cursor:hover {
+  cursor: pointer;
+} */
+
+.fallenPieces {
+  width: 5%;
+  min-width: 160px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+#selected {
+  outline-style: solid;
+  outline-color: blue;
+  backdrop-filter: opacity(25%);
+}
+
+.chats {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: grey;
+}
+
+#logout {
+  float: right;
+}
